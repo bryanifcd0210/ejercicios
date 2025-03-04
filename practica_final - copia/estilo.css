@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+input[type="text"], input[type="email"], select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+/* table, th, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+} */
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #4CAF50;  /* Color verde */
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+    background-color: #f2f2f2;  /* Color de fondo claro */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Borde suave */
+}
+
+/* Estilo para las filas de la tabla cuando se pasa el ratón */
+tr:hover {
+    background-color: #ddd;  /* Color de fondo cuando el ratón pasa sobre la fila */
+}
+
+/* Estilo para la tabla cuando no hay resultados */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Agregar bordes suaves a la tabla */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Espaciado de la tabla */
+table {
+    margin: 20px 0;
+    border-radius: 8px;  /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Estilo para las celdas de la última columna */
+td:last-child {
+    font-weight: bold;  /* Resalta el tipo de empleado */
+    color: #555;
+}
+
+/* Estilo para el encabezado de la tabla */
+thead {
+    background-color: #333;  /* Fondo oscuro para el encabezado */
+    color: white;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Búsqueda</title>
+</head>
+<body>
+    <h1>Formulario de Búsqueda</h1>
+
+    <form action="index.php" method="post">
+        <fieldset>
+            <legend>Buscador</legend>
+
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" /><br><br>
+
+            <!-- Campo para los apellidos -->
+            <label for="apellidos">Apellido:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellido" /><br><br>
+
+            <!-- Campo para el rango de edad -->
+            <label for="edad_min">Edad:</label>
+            <input type="number" name="edad_min" id="edad_min" placeholder="Edad mínima" />
+            <span>-</span>
+            <input type="number" name="edad_max" id="edad_max" placeholder="Edad máxima" /><br><br>
+
+            <!-- Selección del tipo de búsqueda -->
+            <label for="criterio">Buscar por:</label>
+            <select name="criterio" id="criterio">
+                <option value="nombre">Nombre</option>
+                <option value="apellidos">Apellido</option>
+                <option value="edad">Edad</option>
+                <option value="nombre_apellidos">Nombre y Apellido</option>
+                <option value="edad_rango">Edad (Rango)</option>
+            </select><br><br>
+
+            <!-- Botón de búsqueda -->
+            <input type="submit" value="Buscar" />
+        </fieldset>
+    </form>
+
+    <!-- Mostrar el resultado de la búsqueda -->
+    <?php if (isset($resultado)): ?>
+        <fieldset>
+            <legend>Resultado</legend>
+            <p><?php echo htmlspecialchars($resultado); ?></p>
+        </fieldset>
+    <?php endif; ?>
+</body>
+</html>
